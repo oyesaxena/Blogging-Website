@@ -26,7 +26,7 @@ var Storage = multer.diskStorage({
 
 // end parser middleware
 app.set('view engine', 'ejs');
-mongoose.connect("mongodb://localhost:27017/V-Purify", {useNewUrlParser: true, useUnifiedTopology:true});
+mongoose.connect("mongodb+srv://admin-V:test123@v-purify-xaumc.mongodb.net/V-Purify", {useNewUrlParser: true, useUnifiedTopology:true});
 
 // custom middleware to log data access
 const log = function (request, response, next) {
@@ -95,8 +95,8 @@ app.post("/submit", function(request, response) {
 		port: 465,
 		secure: true,
 		auth: {
-			user: "absa0545@gmail.com", // this should be YOUR GMAIL account
-			pass: "Abhisaxy07" // this should be your password
+			user: "oyesaxena@gmail.com", // this should be YOUR GMAIL account
+			pass: "oyesaxena123" // this should be your password
         },
         tls:{
             rejectUnauthorized:false
@@ -106,7 +106,7 @@ app.post("/submit", function(request, response) {
 	var textBody = `FROM: ${request.body.name} EMAIL: ${request.body.email} PHONE:${request.body.phone} MESSAGE: ${request.body.message}`;
 	var htmlBody = `<h2>Mail From Contact Form</h2><p>from: ${request.body.name} <a href="mailto:${request.body.email}">${request.body.phone} ${request.body.email}</a></p><p>${request.body.message}</p>`;
 	var mail = {
-		from: "absa0545@gmail.com", // sender address
+		from: "oyesaxena@gmail.com", // sender address
 		to: "sivin2552000@gmail.com", // list of receivers (THIS COULD BE A DIFFERENT ADDRESS or ADDRESSES SEPARATED BY COMMAS)
 		subject: "Mail From Contact Form", // Subject line
 		text: textBody,
