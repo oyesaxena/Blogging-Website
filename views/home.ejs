@@ -1,0 +1,336 @@
+<%- include("partials/header") %>
+
+<div class="content">
+	<div class="services-section" id="services">
+		<div class="container"> 
+		<div class="services-header">
+			<h3><span>[</span> Grab Bussiness Oppurtunity <span>]</span></h3>
+			<br>
+			
+				
+		</div>
+		<br>
+			<div class=" services-grid">
+				<img style="margin-left: 38% ;" class="ser-photo" src="images/handshake.jpg" alt=""/>
+				<br>
+				<h3 style="padding-left: 25%;" ><span>Sanitation Station Franchise</span></h3>
+				
+				
+			</div>
+			<div class="clearfix"></div>
+			<div class="arrow1">
+				<a href="#work" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+				</div>
+	</div>
+	</div>
+	</div>
+	<div class="content">
+		<div class="services-section" id="services">
+			<div class="container"> 
+			<div class="services-header">
+				<h3><span>[</span> services <span>]</span></h3>
+				<br>
+				
+					
+			</div>
+			<br>
+				<div class=" services-grid">
+					<img class="ser-photo" src="images/sanit.png" alt=""/>
+					<br>
+					<h3><span>V-Purify</span></h3>
+					<br>
+					<p style="font-size: 2rem;">Let's Find a Covid Free Ride</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="arrow1">
+					<a href="#work" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+					</div>
+		</div>
+		</div>
+		</div>
+		<div class="works-section" id="work" id="work">
+		   <div class="works-header">
+				<h3><span>[</span> corporates <span>]</span></h3>
+					
+			</div>
+			<div class="portfolio-section-bottom-row" id="portfolio">
+			<div class="container">
+				<img style="width: 40%; margin-left: 30%;" src="images/Under-Construction-Sign.png">
+
+
+
+		                </div>
+					</div>
+					
+<div class="clearfix"></div>					
+				</div>
+ <!-- Script for gallery Here -->
+				<script type="text/javascript" src="/js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+			<!-- Gallery Script Ends -->
+			
+		
+	  
+	  <div class="arrow">
+				<a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
+				</div>
+				
+    <!-- portfolio-section-ends -->
+    <!-- <div class="about-section" id="about" id="about"> -->
+        <div class="content">
+            <div class="services-section" id="services">
+                <div class="container"> 
+                <div class="services-header">
+                    <h3><span>[</span> blogs <span>]</span></h3>
+                        <p>Blogs Collection </p>
+                </div>
+                <div class="row">
+                <% blogs.forEach( function (blog){ %>
+                     
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 30rem;">
+                            <img class="card-img-top" src="/uploads/<%= blog.image %>" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 style="font-size: 25px; font-weight: bold;" class="card-title"><%= blog.title %></h5>
+							  <p class="card-text"><%= blog.content.substring(0, 70) + " ..." %>
+							  </p>
+                              <a href="/blogs/<%=blog._id%>" class="btn btn-primary">Read More</a>
+                            </div>
+                          </div>
+                    </div> 
+					<% } )%>
+					<br>
+			
+				</div>
+				<div style="position: relative;">
+					<a  href="/blogsPage"><button type="button" class="btn btn-dark btn-lg download-button"><i class="fas fa-book-reader"></i> Read Blogs</button></a>
+					<a  href="/write"><button type="button" class="btn btn-dark btn-lg download-button"><i class="fas fa-pen"></i> Write Blogs</button></a>
+					  </div>
+				
+                    <div class="clearfix"></div>
+                    <div class="arrow1">
+                        <a href="#work" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+                        </div>
+            </div>
+            </div>
+            </div>
+
+
+
+
+	<div class="about-section" id="about" id="about">
+	<div class="container">
+		<div class="about-header">
+			<h3><span>[</span> about <span>]</span></h3>
+			<!-- <div class="about-imag">
+			<img src="images/pic-9.jpg" alt=""/>
+			</div>
+			<div class="about-text">
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+			<div class="about-sectiongrids">
+				<div class="col-md-6 about-leftgrid">
+					<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Graphic Design</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Ui/Ux</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Logo Design</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Html/Css</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+
+	</div>
+	<div class="col-md-6 about-rightgrid">
+		<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>web design</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>branding</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Photography</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>Jquery</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div> -->
+		 
+		<div class="clearfix"></div>
+	
+	<div class="arrow1">
+	<a href="#contact" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+					</div>
+	</div>
+	</div>
+	</div>
+	<div class="footer-section" id="contact" id="contact">
+			<div class="container"> 
+			<div class="contact-header">
+				<h3><span>[</span> contact <span>]</span></h3>
+					<p>Fill the form to send us a mail.</p>
+            </div>
+            
+            <%- include("partials/form.html") %> 
+			
+			
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+
+		</div>		
+	</div>
+	
+	
+</body>
+</html>

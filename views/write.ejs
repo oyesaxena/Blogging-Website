@@ -1,0 +1,25 @@
+<%- include("partials/header") %> 
+<br>
+<div class="content">
+	<div class="services-section" id="services">
+		<div class="container"> 
+		<div class="services-header">
+			<h3><span>[</span> Compose <span>]</span></h3>
+			<br>
+			
+				
+		</div>
+<form class="" action="/write" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label style="font-size:xx-large;" ><strong>Title</strong></label>
+      <input class="form-control" type="text" name="blogTitle">
+      <label style="font-size:xx-large;" for="img"><strong>Image</strong></label>
+      <input type="file" id="img" name="img" accept="image/*">
+      <label style="font-size:xx-large;"><strong>Content</strong></label>
+      <textarea class="form-control" name="blogBody" rows="5" cols="30"></textarea>
+    </div>
+    <button style="font-size:xx-large;" class="btn btn-primary" type="submit" name="button">Publish</button>
+  </form>
+
+
+  

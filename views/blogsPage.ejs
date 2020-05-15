@@ -1,0 +1,31 @@
+<%- include("partials/header") %> 
+
+<br>
+<div class="content">
+  <div class="services-section" id="services">
+      <div class="container"> 
+      <div class="services-header">
+          <h3><span>[</span> blogs <span>]</span></h3>
+              <p>Blogs Collection </p>
+      </div>
+      
+      <% blogs.forEach( function (blog){ %>
+           
+          <div class="col-lg-4 blogs-grid">
+              <div class="card" style="width: 22rem;">
+                  <img class="card-img-top" src="/uploads/<%= blog.image %>" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 style="font-size: x-large;" class="card-title"><strong><%= blog.title %></strong></h5>
+                    <p style="font-size: large;" class="card-text"><%= blog.content %></p>
+                    <a style="font-size: larger;" href="/blogs/<%=blog._id%>" class="btn btn-primary btn-lg">Read More</a>
+                  </div>
+                </div>
+          </div> 
+          <% } )%>
+      </div>
+      </div>
+      </div>
+      
+
+
+
