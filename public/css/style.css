@@ -347,6 +347,7 @@ ul.wmuSliderPagination {
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #2a404e;
+	text-align: center;
 }
 .blogs-header h3 span {
 	color: #F0C514;
@@ -356,6 +357,7 @@ ul.wmuSliderPagination {
 	font-size: 15px;
 	color: #7e7e7e;
 	padding: 25px 0;
+	text-align: center;
 }
 
 .services-header h3
@@ -365,6 +367,7 @@ ul.wmuSliderPagination {
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #2a404e;
+	text-align: center;
 }
 .services-header h3 span {
 	color: #F0C514;
@@ -374,6 +377,7 @@ ul.wmuSliderPagination {
 	font-size: 15px;
 	color: #7e7e7e;
 	padding: 25px 0;
+	text-align: center;
 }
 .services-sectiongrids {
 	text-align: center;
@@ -384,6 +388,7 @@ ul.wmuSliderPagination {
 	padding: 15px 0 0 42%;
 	color: #2a404e;
 	text-transform: uppercase;
+	text-align: center;
 }
 .bussiness-grid h3{
 	font-size: 2.3em;
@@ -391,11 +396,13 @@ ul.wmuSliderPagination {
 	padding: 15px 0 0 27%;
 	color: #2a404e;
 	text-transform: uppercase;
+	text-align: center;
 }
 .ser-photo{
 	margin-left: 38%;
 	max-width: 100%;
 	height: auto;
+	
 
 }
 
@@ -1055,7 +1062,7 @@ padding-bottom: 2em;
 		.navbar-toggler{
 			color: #eee;
 		}
-		@media screen and (max-width: 858px){
+		@media screen and (max-width: 1000px){
 			html{
 				overflow-x: hidden;
 			}
@@ -1070,7 +1077,7 @@ padding-bottom: 2em;
 			.services-grid h3 {
 				font-size: 2.3em;
 				font-weight: bold;
-				padding: 15px 0 0 14rem;
+				padding: 15px 10rem 0 14rem;
 				color: #2a404e;
 				text-transform: uppercase;
 			}
