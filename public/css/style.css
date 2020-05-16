@@ -1106,9 +1106,9 @@ padding-bottom: 2em;
 				
 			}
 			.services-grid p{
-				margin-left: auto;
-				display: inline;
-				margin-right: auto;
+				
+				
+				padding-right: 12rem;
 				text-align: center;
 
 			}
@@ -1156,21 +1156,30 @@ padding-bottom: 2em;
 				font-weight: bolder;
 				/* padding: 2rem;
 				margin: 0 30rem 0 27rem; */
-				margin-left: 25% ;
-				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				
 				text-transform: uppercase;
 			}
 			.bbt{
-				margin: 0 1rem 0 1rem;
-				position: relative;
+				
+				text-align: center;
+				display: inline-block;
+				
 				color: #eee;
 
 			}
+			.bbc{
+				text-align: center;
+			}
 			.bContent{
-				position: absolute;
+				
 				padding: 1px;
 				margin-top: 10rem;
-				margin-left: 20% ;
+				
+				margin-left: auto;
+				margin-right: auto;
 				color: #F0C514;
 				font-weight: bold;
 			
