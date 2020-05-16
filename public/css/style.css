@@ -377,7 +377,7 @@ ul.wmuSliderPagination {
 	font-size: 15px;
 	color: #7e7e7e;
 	padding: 25px 0;
-	text-align: center;
+	
 }
 .services-sectiongrids {
 	text-align: center;
@@ -388,7 +388,7 @@ ul.wmuSliderPagination {
 	padding: 15px 0 0 42%;
 	color: #2a404e;
 	text-transform: uppercase;
-	text-align: center;
+	
 }
 .bussiness-grid h3{
 	font-size: 2.3em;
@@ -396,7 +396,7 @@ ul.wmuSliderPagination {
 	padding: 15px 0 0 27%;
 	color: #2a404e;
 	text-transform: uppercase;
-	text-align: center;
+	
 }
 .ser-photo{
 	margin-left: 38%;
@@ -1075,15 +1075,17 @@ padding-bottom: 2em;
 						box-sizing: border-box;
 			}
 			.services-grid h3 {
-				font-size: 2.3em;
+				font-size: 2rem;
 				font-weight: bold;
+				text-align: ;
 				padding: 15px 10rem 0 14rem;
 				color: #2a404e;
 				text-transform: uppercase;
 			}
 			.bussiness-grid h3{
-				font-size: 2.3em;
+				font-size: 2rem;
 				font-weight: bold;
+				text-align: center;
 				padding: 15px 0 0 13rem;
 				color: #2a404e;
 				text-transform: uppercase;
@@ -1096,6 +1098,7 @@ padding-bottom: 2em;
 			}
 			.services-grid p{
 				padding-left: 10rem;
+				text-align: center;
 
 			}
 			.card{
