@@ -1086,17 +1086,22 @@ padding-bottom: 2em;
 				font-size: 2rem;
 				font-weight: bold;
 				text-align: center;
-				margin-right: 14rem;
+				margin-right: 12rem;
 				color: #2a404e;
 				text-transform: uppercase;
 			}
 			.bussiness-grid img{
-				margin-right: 10rem;
-				align-content: center;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				
 			}
 			.services-grid img{
-				align-content: center;
-				margin-left: 10rem;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				
+				
 			}
 			.services-grid p{
 				margin-right: 10rem;
