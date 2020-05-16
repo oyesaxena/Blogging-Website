@@ -1077,8 +1077,8 @@ padding-bottom: 2em;
 			.services-grid h3 {
 				font-size: 2rem;
 				font-weight: bold;
-				text-align: ;
-				padding: 15px 10rem 0 14rem;
+				text-align: center;
+				
 				color: #2a404e;
 				text-transform: uppercase;
 			}
@@ -1086,7 +1086,7 @@ padding-bottom: 2em;
 				font-size: 2rem;
 				font-weight: bold;
 				text-align: center;
-				padding: 15px 0 0 13rem;
+				
 				color: #2a404e;
 				text-transform: uppercase;
 			}
