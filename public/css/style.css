@@ -1086,27 +1086,31 @@ padding-bottom: 2em;
 				font-size: 2rem;
 				font-weight: bold;
 				text-align: center;
-				margin-right: 10rem;
+				margin-right: 14rem;
 				color: #2a404e;
 				text-transform: uppercase;
 			}
 			.bussiness-grid img{
-				margin-left: 10rem;
+				margin-right: 10rem;
+				align-content: center;
 			}
 			.services-grid img{
+				align-content: center;
 				margin-left: 10rem;
 			}
 			.services-grid p{
-				padding-left: 10rem;
+				margin-right: 10rem;
 				text-align: center;
 
 			}
 			.card{
 				margin-bottom: 30px;
-				margin-left: 6rem;
+				margin-right: 6rem;
+				align-content: center;
 			}
 			.download-button{
 				margin-left: 40px;
+				align-content: center;
 			}
 			.carousel-caption{
 				color: #fff;
