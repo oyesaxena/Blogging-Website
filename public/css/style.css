@@ -1078,7 +1078,9 @@ padding-bottom: 2em;
 				font-size: 2rem;
 				font-weight: bold;
 				text-align: center;
-				margin-right: 10rem;
+				margin-left: auto;
+				display: inline-block;
+				margin-right: auto;
 				color: #2a404e;
 				text-transform: uppercase;
 			}
@@ -1104,7 +1106,9 @@ padding-bottom: 2em;
 				
 			}
 			.services-grid p{
-				margin-right: 10rem;
+				margin-left: auto;
+				display: inline;
+				margin-right: auto;
 				text-align: center;
 
 			}
