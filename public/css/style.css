@@ -253,7 +253,8 @@ nav a:focus {
 }
 
 .download-button{
-	margin: 5% 3% 5% 0;
+	margin: 5% 3% 5% 42.5%;
+	
 }
 
 /***** Slider *****/
@@ -926,7 +927,7 @@ padding:30px 0;
 .social-icon i{
 	width:40px;
 	height:40px;
-	background: url("../images/img-sprite.png") no-repeat 0px 0px;
+	padding: 3rem;
 	display:inline-block;
 }
 .social-icon i:hover{
@@ -1154,7 +1155,7 @@ padding-bottom: 2em;
 			}
 			.download-button{
 				display: block;
-				margin-left: auto;
+				margin-left: 17.5%;
 				margin-right: auto;
 			}
 			
