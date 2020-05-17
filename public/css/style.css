@@ -342,7 +342,7 @@ ul.wmuSliderPagination {
 .services-header{
 	text-align: center;
 	width: 85%;
-	margin: 0 auto;
+	margin: 0 0 auto 7rem;
 
 }
 .blogs-header{
@@ -925,9 +925,10 @@ text-align: center;
 padding:30px 0;
 }
 .social-icon i{
-	width:40px;
-	height:40px;
-	padding: 3rem;
+	margin-top: 5rem;
+	width:30px;
+	height:30px;
+	padding: 0 5rem 0 3rem;
 	display:inline-block;
 }
 .social-icon i:hover{
