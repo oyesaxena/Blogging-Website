@@ -88,42 +88,42 @@ app.get("/blogs/:blogId", function(req, res){
 	});
 
 // HTTP POST
-app.post("/submit", function(request, response) {
-  // create reusable transporter object using the default SMTP transport
-	const transporter = nodemailer.createTransport({
-		host: "smtp.gmail.com",
-		port: 465,
-		secure: true,
-		auth: {
-			user: "absa0545@gmail.com", // this should be YOUR GMAIL account
-			pass: "Abhisaxy07" // this should be your password
-        },
-        tls:{
-            rejectUnauthorized:false
-          }
-	});
+// app.post("/submit", function(request, response) {
+//   // create reusable transporter object using the default SMTP transport
+// 	const transporter = nodemailer.createTransport({
+// 		host: "smtp.gmail.com",
+// 		port: 465,
+// 		secure: true,
+// 		auth: {
+// 			user: "absa0545@gmail.com", // this should be YOUR GMAIL account
+// 			pass: "Abhisaxy07" // this should be your password
+//         },
+//         tls:{
+//             rejectUnauthorized:false
+//           }
+// 	});
 
-	var textBody = `FROM: ${request.body.name} EMAIL: ${request.body.email} PHONE:${request.body.phone} MESSAGE: ${request.body.message}`;
-	var htmlBody = `<h2>Mail From Contact Form</h2><p>from: ${request.body.name} <a href="mailto:${request.body.email}">${request.body.phone} ${request.body.email}</a></p><p>${request.body.message}</p>`;
-	var mail = {
-		from: "absa0545@gmail.com", // sender address
-		to: "kmv.main@gmail.com", // list of receivers (THIS COULD BE A DIFFERENT ADDRESS or ADDRESSES SEPARATED BY COMMAS)
-		subject: "Mail From Contact Form", // Subject line
-		text: textBody,
-		html: htmlBody
-	};
+// 	var textBody = `FROM: ${request.body.name} EMAIL: ${request.body.email} PHONE:${request.body.phone} MESSAGE: ${request.body.message}`;
+// 	var htmlBody = `<h2>Mail From Contact Form</h2><p>from: ${request.body.name} <a href="mailto:${request.body.email}">${request.body.phone} ${request.body.email}</a></p><p>${request.body.message}</p>`;
+// 	var mail = {
+// 		from: "absa0545@gmail.com", // sender address
+// 		to: "kmv.main@gmail.com", // list of receivers (THIS COULD BE A DIFFERENT ADDRESS or ADDRESSES SEPARATED BY COMMAS)
+// 		subject: "Mail From Contact Form", // Subject line
+// 		text: textBody,
+// 		html: htmlBody
+// 	};
 
-	// send mail with defined transport object
-	transporter.sendMail(mail, function (err, info) {
-		if(err) {
-			console.log(err);
-			response.json({ message: "message not sent: an error occured; check the server's console log" });
-		}
-		else {
-			response.json({ message: `message sent: ${info.messageId}` });
-		}
-	});
-});
+// 	// send mail with defined transport object
+// 	transporter.sendMail(mail, function (err, info) {
+// 		if(err) {
+// 			console.log(err);
+// 			response.json({ message: "message not sent: an error occured; check the server's console log" });
+// 		}
+// 		else {
+// 			response.json({ message: `message sent: ${info.messageId}` });
+// 		}
+// 	});
+// });
 
 app.post("/write",upload,  function(req,res){
   
