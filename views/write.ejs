@@ -1,5 +1,19 @@
-<%- include("partials/header") %> 
-<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+  <%- include("partials/header") %>
+  <title>Write blogs</title>
+  <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
+
+  
+</head>
+<body>
+  <br>
 <div class="content">
 	<div class="services-section" id="services">
 		<div class="container"> 
@@ -16,10 +30,19 @@
       <label style="font-size:xx-large;" for="img"><strong>Image</strong></label>
       <input type="file" id="img" name="img" accept="image/*">
       <label style="font-size:xx-large;"><strong>Content</strong></label>
+      <div id="editor">
       <textarea class="form-control" name="blogBody" rows="5" cols="30"></textarea>
+    </div>
+    <script>
+      ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .catch( error => {
+              console.error( error );
+          } );
+  </script>
     </div>
     <button style="font-size:xx-large;" class="btn btn-primary" type="submit" name="button">Publish</button>
   </form>
+</body>
+</html>
 
-
-  
