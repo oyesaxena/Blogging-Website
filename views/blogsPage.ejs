@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <%- include("partials/header") %> 
-  <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
-maximum-scale=1.0, user-scalable=0">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>blogs</title>
-</head>
+
+<%- include("partials/header") %> 
 <body>
   <br>
 <div class="content">
@@ -25,7 +17,7 @@ maximum-scale=1.0, user-scalable=0">
                   <img class="card-img-top" src="/uploads/<%= blog.image %>" alt="Card image cap">
                   <div class="card-body">
                     <h5 style="font-size: x-large;" class="card-title"><strong><%= blog.title %></strong></h5>
-                    <p style="font-size: large;" class="card-text"><%= blog.content %></p>
+                    <p style="font-size: large;" class="card-text"><%- blog.content %></p>
                     <a style="font-size: larger;" href="/blogs/<%=blog._id%>" class="btn btn-primary btn-lg">Read More</a>
                   </div>
                 </div>

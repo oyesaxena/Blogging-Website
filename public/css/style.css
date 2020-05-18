@@ -47,14 +47,23 @@ input[type="button"]{
 	text-transform: uppercase;
 }
 .bContent{
-	margin: 5rem 25rem 0 0rem;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	display: block;
 	
 	
 
 }
 .bbt{
 	color: #eee;
-	margin-left: 37%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.bbc{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 h1,h2,h3,h4,h5,h6{

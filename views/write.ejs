@@ -8,6 +8,13 @@ maximum-scale=1.0, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes" />
   <%- include("partials/header") %>
   <title>Write blogs</title>
+  <script src="https://cdn.tiny.cloud/1/hewcgyiqgw3ecclp77euwz000222g9onn2z6mh09fu4n1mi9/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+  <script>
+    tinymce.init({
+      selector: '#mytextarea'
+    });
+  </script>
  
   
 </head>
@@ -29,12 +36,13 @@ maximum-scale=1.0, user-scalable=0">
       <label style="font-size:xx-large;" for="img"><strong>Image</strong></label>
       <input type="file" id="img" name="img" accept="image/*">
       <label style="font-size:xx-large;"><strong>Content</strong></label>
-      <pre><textarea class="form-control"  name="blogBody" rows="5" cols="30"></textarea></pre>
+      <textarea id="mytextarea" class="form-control"  name="blogBody" rows="5" cols="30"></textarea>
     
     
     </div>
     <button style="font-size:xx-large;" class="btn btn-primary" type="submit" name="button">Publish</button>
   </form>
 </body>
+
 </html>
 
