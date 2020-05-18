@@ -48,8 +48,8 @@ input[type="button"]{
 }
 .bContent{
 	margin: 5rem 25rem 0 20rem;
-	color: #F0C514;
-	font-weight: bold;
+	
+	
 
 }
 .bbt{
@@ -1195,8 +1195,7 @@ padding-bottom: 2em;
 				
 				margin-left: auto;
 				margin-right: auto;
-				color: #F0C514;
-				font-weight: bold;
+				
 			
 			}
 			.blogs-header{
